@@ -1,0 +1,121 @@
+body
+{
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-family: Raleway;
+}
+
+header h1
+{
+	text-align: center;
+}
+
+#contenido
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#contenido > h1
+{
+	padding: 10px;
+	text-align: center;
+}
+
+footer
+{
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contenedor
+{
+	display: flex;
+	flex-direction: row;
+}
+
+img
+{
+	border: 2px solid white;
+	width: 250px;
+}
+
+.contenedor > div
+{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+/*Edicion del ejercicio*/
+/*para la 1ra Imagen*/
+@keyframes imagen1-animacion /*primero, se crea la animacion*/
+{
+	from
+	{
+		border: 1px solid black;
+	}
+	to
+	{
+		border: 4px solid white;
+	}
+}
+/*luego se aplica para ver los cambios*/
+#imagen1 img
+{
+	border: 4px solid white;
+	animation-name: imagen1-animacion;
+	animation-duration: 2s;
+}
+img
+{
+	width: 250px;
+}
+
+/*IMAGEN 2*/
+@keyframes imagen2-animacion
+{
+	0%
+	{
+		position: relative;
+		left: 0px;
+	}
+	50%
+	{
+		position: relative;
+		left: 0px;
+	}
+  100%
+	{
+		position: relative;
+		left: 0px;
+	}
+}
+
+/*se le aplican los cambios a la imagen 2*/
+#imagen2 img
+{
+animation-name: imagen2-animacion;
+animation-duration: 2s;
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+-o-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+/*para la imagen 3*/
+#imagen3
+{
+	background-color: black;
+	transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+#imagen3:hover
+{
+	background: white;
+}

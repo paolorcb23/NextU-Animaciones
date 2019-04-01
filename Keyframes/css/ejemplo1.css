@@ -1,0 +1,23 @@
+#contenedor
+{
+  width: 1000px;
+  height: 600px;
+  border: 2px solid;
+  margin: 0 auto;
+  background-color: #DBFFF1;
+  text-align: center;
+  transition: background 1s;
+  animation: miAnimacion 3s; /*si se agrega infinite, se repetira infinitamente*/
+}
+
+@-webkit-keyframes miAnimacion
+{
+  from
+  {
+    transform: rotate(45deg);
+  }
+  to
+  {
+    height: 0;
+  }
+}

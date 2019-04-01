@@ -1,0 +1,17 @@
+#contenedor
+{
+  width: 1000px;
+  height: 600px;
+  border: 2px solid;
+  margin: 0 auto;
+  background-color: blue;
+  transition: background 2s;
+}
+
+#contenedor img
+{
+  width: 200px;
+  height: 200px;
+  transition-property: width, height; /*aqui se le dice QUE MODIFICAR*/
+  transition-duration: 2s, 4s; /*Y aqui, la duracion*/
+}
